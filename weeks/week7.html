@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7: Electronics Design | KamleshBisht</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="week-page">
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+    
+    <!-- Parallax Floating Elements -->
+    <div class="floating-element floating-square" style="top: 30%; left: 10%;"></div>
+    <div class="floating-element floating-triangle" style="top: 75%; left: 82%;"></div>
+    <div class="floating-element floating-circle" style="top: 65%; left: 18%;"></div>
+    
+    <!-- Scroll-based Animation Background -->
+    <div class="fade-bg"></div>
+    
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Resume Download Button -->
+    <a href="../resume.pdf" class="resume-btn" download="Kamlesh_Bisht_Resume.pdf">
+        <i class="fas fa-download"></i> Resume
+        <span class="feature-label">NEW</span>
+    </a>
+    
+    <!-- Back to Assignments Button -->
+    <a href="../assignments.html" class="back-to-assignments">
+        <i class="fas fa-arrow-left"></i> Back to Assignments
+    </a>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://fabacademy.org/2018/labs/fablabvigyanasharm/students/kamlesh-bisht/img/logo.png" alt="Fab Academy Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h1>KamleshBisht</h1>
+                <h2>Passionately innovating</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="content-container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../assignments.html">Assignments</a></li>
+                <li><a href="../final-project.html">Final Project</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <main>
+            <section>
+                <h2>Week 7: Electronics Design</h2>
+                <img src="../images/assignments/assignment3.svg" alt="Electronics Design" class="assignment-header-image">
+                
+                <p>
+                    Week 7 focused on electronics design, building upon the electronics production skills from Week 5.
+                    This assignment involved designing custom circuit boards, which is a crucial skill for creating
+                    tailored electronic solutions for specific applications, particularly valuable for my work in
+                    solar R&D at Barefoot College.
+                </p>
+                
+                <h3>Key Learning Outcomes</h3>
+                <ul>
+                    <li>Understanding the principles of circuit design and component selection</li>
+                    <li>Learning to use Eagle CAD/KiCad for schematic capture and PCB layout</li>
+                    <li>Designing circuits with microcontrollers (primarily ATtiny series)</li>
+                    <li>Implementing design for manufacturing (DFM) principles for PCB production</li>
+                    <li>Creating documentation for circuit designs</li>
+                </ul>
+                
+                <h3>Equipment Used</h3>
+                <ul>
+                    <li>KiCad EDA software for circuit design</li>
+                    <li>Multimeter and oscilloscope for testing and debugging</li>
+                    <li>Various electronic components (ATtiny44A, resistors, capacitors, etc.)</li>
+                    <li>FTDI cable for programming and communication</li>
+                </ul>
+                
+                <h3>Assignment Deliverables</h3>
+                <p>
+                    For this assignment, I needed to:
+                </p>
+                <ol>
+                    <li>Design a microcontroller board with an input and output device</li>
+                    <li>Create schematics and PCB layouts for the design</li>
+                    <li>Document the design process, component selection, and design decisions</li>
+                    <li>Prepare the design for fabrication</li>
+                </ol>
+                
+                <h3>My Project: Solar Charge Monitor</h3>
+                <p>
+                    Drawing from my experience at Barefoot College, I designed a simple solar charge monitoring circuit
+                    based on an ATtiny44A microcontroller. The circuit includes:
+                </p>
+                <ul>
+                    <li>Voltage dividers to measure both solar panel and battery voltage</li>
+                    <li>LEDs to indicate charging status and battery level</li>
+                    <li>A small OLED display for showing detailed information</li>
+                    <li>A power management system for efficient operation</li>
+                </ul>
+                
+                <h3>Design Considerations</h3>
+                <p>
+                    Several key considerations influenced my design:
+                </p>
+                <ul>
+                    <li><strong>Low power consumption:</strong> The circuit needed to draw minimal power to avoid draining the battery it monitors</li>
+                    <li><strong>Durability:</strong> Components were selected for their reliability in varying environmental conditions</li>
+                    <li><strong>Cost-effectiveness:</strong> Using readily available components to keep the design affordable</li>
+                    <li><strong>Simplicity:</strong> Designing a circuit that could be easily understood and maintained by others</li>
+                </ul>
+                
+                <h3>Challenges and Solutions</h3>
+                <p>
+                    One significant challenge was designing the voltage measurement circuit to handle the wide range of voltages from 
+                    solar panels (up to 20V in bright sunlight) while protecting the microcontroller's analog inputs (which can only handle up to 5V).
+                    I solved this by designing appropriate voltage dividers with protection components.
+                </p>
+                
+                <p>
+                    Another challenge was optimizing the PCB layout to minimize noise and interference, particularly important for accurate
+                    analog measurements. I implemented proper ground planes, kept analog and digital signals separated, and used appropriate 
+                    component placement to address this issue.
+                </p>
+                
+                <h3>Reflection</h3>
+                <p>
+                    This electronics design exercise directly applies to my work at Barefoot College, where we develop solar solutions
+                    for rural areas. The skills gained in circuit design will enable me to create customized monitoring and control
+                    systems for our solar installations, potentially improving their efficiency and reliability.
+                </p>
+                
+                <p>
+                    I'm especially interested in continuing to develop this design into a full-fledged monitoring system that could
+                    be deployed in remote areas, providing valuable data on solar system performance while remaining cost-effective
+                    and durable.
+                </p>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:kamalesh@barefootcollege.org"><i class="far fa-envelope"></i> Email: kamalesh@barefootcollege.org</a></li>
+                <li><a href="https://wa.me/917727032477"><i class="fab fa-whatsapp"></i> Whatsapp: +917727032477</a></li>
+                <li><a href="https://barefootcollege.org"><i class="fas fa-building"></i> BAREFOOT COLLEGE</a></li>
+                <li><a href="mailto:barefootcollege.org"><i class="far fa-envelope"></i> Email: barefootcollege.org</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-university"></i> VIGYAN ASHRAM</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-globe"></i> Website: vigyanashram.com</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div class="social-links">
+                <a href="https://github.com/kamleshbisht" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/kamleshbisht" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kamleshbisht" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/kamleshbisht" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>ALMOST DESIGNED AND CODED BY KAMLESH BISHT</p>
+            <p class="copyright">© 2023 Kamlesh Bisht. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <script>
+        // Add no-reload navigation for all links back to assignments page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle the back to assignments button
+            const backBtn = document.querySelector('.back-to-assignments');
+            if (backBtn) {
+                backBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Save the current scroll position of the assignments page
+                    sessionStorage.setItem('assignmentsScrollPosition', 0);
+                    // Change to the assignments page without reloading
+                    window.location.replace('../assignments.html');
+                    return false;
+                });
+            }
+            
+            // Handle the assignments nav link
+            const assignmentsLink = document.querySelector('nav a[href="../assignments.html"]');
+            if (assignmentsLink) {
+                assignmentsLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Save the current scroll position of the assignments page
+                    sessionStorage.setItem('assignmentsScrollPosition', 0);
+                    // Change to the assignments page without reloading
+                    window.location.replace('../assignments.html');
+                    return false;
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

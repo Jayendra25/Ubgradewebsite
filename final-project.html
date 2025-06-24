@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project | KamleshBisht</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .project-section {
+            margin-bottom: 30px;
+        }
+        
+        .project-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .caption {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        .milestone {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #2c3e50;
+        }
+        
+        .milestone h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="final-project-page">
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+    
+    <!-- Parallax Floating Elements -->
+    <div class="floating-element floating-square" style="top: 35%; left: 8%;"></div>
+    <div class="floating-element floating-triangle" style="top: 55%; left: 90%;"></div>
+    <div class="floating-element floating-circle" style="top: 80%; left: 15%;"></div>
+    
+    <!-- Scroll-based Animation Background -->
+    <div class="fade-bg"></div>
+    
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Resume Download Button -->
+    <a href="resume.pdf" class="resume-btn" download="Kamlesh_Bisht_Resume.pdf">
+        <i class="fas fa-download"></i> Resume
+        <span class="feature-label">NEW</span>
+    </a>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://fabacademy.org/2018/labs/fablabvigyanasharm/students/kamlesh-bisht/img/logo.png" alt="Fab Academy Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h1>KamleshBisht</h1>
+                <h2>Passionately innovating</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="content-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="final-project.html">Final Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <main>
+            <section class="project-section">
+                <h2>Final Project: Solar-Powered Innovation Hub</h2>
+                <p>
+                    For my final project at Fab Academy, I've developed a Solar-Powered Innovation Hub 
+                    designed for rural communities, particularly in the context of Barefoot College's initiatives. 
+                    This project combines renewable energy, digital fabrication, and community development.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h3>Project Overview</h3>
+                <p>
+                    The Solar-Powered Innovation Hub is a modular system that integrates solar energy 
+                    collection with digital fabrication tools and educational resources. It's designed 
+                    to be deployed in remote areas where electricity may be inconsistent or unavailable, 
+                    providing communities with tools to innovate, learn, and create sustainable solutions 
+                    to local challenges.
+                </p>
+                
+                <div class="image-gallery">
+                    <figure>
+                        <img src="https://fabacademy.org/2018/labs/fablabvigyanasharm/students/kamlesh-bisht/img/singnature.png" alt="Project Concept Design">
+                        <figcaption class="caption">Concept design of the Innovation Hub</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h3>Design Process</h3>
+                <p>
+                    The design process involved multiple iterations and considerations of various 
+                    environmental, social, and technical factors. I started with research into 
+                    existing solar solutions and community makerspaces, then developed the concept 
+                    through sketches, 3D modeling, and prototyping.
+                </p>
+                
+                <div class="milestone">
+                    <h4>Milestone 1: Needs Assessment</h4>
+                    <p>
+                        Conducted surveys and interviews with community members to understand their 
+                        needs, challenges, and aspirations related to technology access and innovation.
+                    </p>
+                </div>
+                
+                <div class="milestone">
+                    <h4>Milestone 2: Energy System Design</h4>
+                    <p>
+                        Designed the solar power system, including panel placement, battery storage, 
+                        and power management to ensure reliable operation in various conditions.
+                    </p>
+                </div>
+                
+                <div class="milestone">
+                    <h4>Milestone 3: Hub Structure Development</h4>
+                    <p>
+                        Created a modular structure design that can be easily transported, 
+                        assembled, and customized to different environments.
+                    </p>
+                </div>
+                
+                <div class="milestone">
+                    <h4>Milestone 4: Tool Integration and Testing</h4>
+                    <p>
+                        Selected and integrated appropriate digital fabrication tools that balance 
+                        capability with energy efficiency, and conducted extensive testing.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li><strong>Solar Capacity:</strong> 2kW system with battery storage</li>
+                    <li><strong>Fabrication Tools:</strong> Energy-efficient 3D printer, laser cutter, and CNC router</li>
+                    <li><strong>Structure:</strong> Modular design built with locally available materials</li>
+                    <li><strong>Connectivity:</strong> Low-power satellite internet connection</li>
+                    <li><strong>Environmental Controls:</strong> Passive cooling and heat management system</li>
+                    <li><strong>Education:</strong> Built-in digital learning station with offline resources</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h3>Implementation and Future Work</h3>
+                <p>
+                    The first prototype of the Innovation Hub will be deployed at Barefoot College 
+                    for testing and refinement. Future work includes developing a simplified construction 
+                    manual, training local communities in maintenance and operation, and creating an 
+                    open-source platform for sharing designs and innovations created in these hubs.
+                </p>
+                
+                <p>
+                    This project represents my commitment to using digital fabrication and renewable 
+                    energy to address real-world challenges and empower communities to become self-sufficient 
+                    innovators and problem-solvers.
+                </p>
+            </section>
+
+            <section class="project-section">
+                <h3>Video Demonstration</h3>
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/6qqqVwM6bMM" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-caption">Demonstration of the Solar-Powered Innovation Hub prototype</p>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:kamalesh@barefootcollege.org"><i class="far fa-envelope"></i> Email: kamalesh@barefootcollege.org</a></li>
+                <li><a href="https://wa.me/917727032477"><i class="fab fa-whatsapp"></i> Whatsapp: +917727032477</a></li>
+                <li><a href="https://barefootcollege.org"><i class="fas fa-building"></i> BAREFOOT COLLEGE</a></li>
+                <li><a href="mailto:barefootcollege.org"><i class="far fa-envelope"></i> Email: barefootcollege.org</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-university"></i> VIGYAN ASHRAM</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-globe"></i> Website: vigyanashram.com</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div class="social-links">
+                <a href="https://github.com/kamleshbisht" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/kamleshbisht" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kamleshbisht" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/kamleshbisht" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>ALMOST DESIGNED AND CODED BY KAMLESH BISHT</p>
+            <p class="copyright">© 2025 Kamlesh Bisht. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

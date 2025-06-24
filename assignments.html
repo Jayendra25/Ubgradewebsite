@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments | KamleshBisht</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        // Force scroll to top on direct access to assignments page
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+        
+        // Check if we need to restore scroll position
+        if (!document.referrer.includes('/weeks/')) {
+            // Reset scroll position when coming from anywhere except week pages
+            window.addEventListener('load', function() {
+                window.scrollTo(0, 0);
+                sessionStorage.removeItem('assignmentsScrollPosition');
+            });
+        }
+    </script>
+</head>
+<body class="assignments-page">
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+    
+    <!-- Parallax Floating Elements -->
+    <div class="floating-element floating-square" style="top: 25%; left: 5%;"></div>
+    <div class="floating-element floating-triangle" style="top: 70%; left: 85%;"></div>
+    <div class="floating-element floating-circle" style="top: 85%; left: 20%;"></div>
+    
+    <!-- Scroll-based Animation Background -->
+    <div class="fade-bg"></div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-indicator-dot"></div>
+        <div class="scroll-indicator-text">Scroll</div>
+    </div>
+    
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Resume Download Button -->
+    <a href="resume.pdf" class="resume-btn" download="Kamlesh_Bisht_Resume.pdf">
+        <i class="fas fa-download"></i> Resume
+        <span class="feature-label">NEW</span>
+    </a>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://fabacademy.org/2018/labs/fablabvigyanasharm/students/kamlesh-bisht/img/logo.png" alt="Fab Academy Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h1>KamleshBisht</h1>
+                <h2>Passionately innovating</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="content-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="final-project.html">Final Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <main>
+            <section>
+                <h2>Assignments</h2>
+                <p>Below is a list of assignments completed during the Fab Academy course:</p>
+                
+                <div class="assignments-grid">
+                    <!-- Week 1 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week1.html" class="assignment-link">
+                            <img src="images/assignments/assignment1.svg" alt="Principles and Practices" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 1</span>
+                                <h3>Principles and Practices</h3>
+                                <p>An introduction to the principles of the Fab Lab network and practices of digital fabrication.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week1.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 2 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week2.html" class="assignment-link">
+                            <img src="images/assignments/assignment2.svg" alt="Project Management" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 2</span>
+                                <h3>Project Management</h3>
+                                <p>Setting up project management tools and version control systems.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week2.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 3 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week3.html" class="assignment-link">
+                            <img src="images/assignments/assignment3.svg" alt="Computer-Aided Design" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 3</span>
+                                <h3>Computer-Aided Design</h3>
+                                <p>Learning and implementing various CAD tools for digital design.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week3.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 4 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week4.html" class="assignment-link">
+                            <img src="images/assignments/assignment4.svg" alt="Computer-Controlled Cutting" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 4</span>
+                                <h3>Computer-Controlled Cutting</h3>
+                                <p>Using laser cutters and vinyl cutters to create precision-cut objects.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week4.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 5 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week5.html" class="assignment-link">
+                            <img src="images/assignments/assignment1.svg" alt="Electronics Production" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 5</span>
+                                <h3>Electronics Production</h3>
+                                <p>Designing and producing PCBs for electronic circuits.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week5.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 6 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week6.html" class="assignment-link">
+                            <img src="images/assignments/assignment2.svg" alt="3D Scanning and Printing" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 6</span>
+                                <h3>3D Scanning and Printing</h3>
+                                <p>Exploring 3D scanning technologies and additive manufacturing techniques.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week6.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 7 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week7.html" class="assignment-link">
+                            <img src="images/assignments/assignment3.svg" alt="Electronics Design" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 7</span>
+                                <h3>Electronics Design</h3>
+                                <p>Creating schematic and PCB layouts for custom electronic circuits.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week7.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Week 8 -->
+                    <div class="assignment-card">
+                        <a href="weeks/week8.html" class="assignment-link">
+                            <img src="images/assignments/assignment4.svg" alt="Computer-Controlled Machining" class="assignment-image">
+                            <div class="assignment-content">
+                                <span class="week-label">Week 8</span>
+                                <h3>Computer-Controlled Machining</h3>
+                                <p>Using CNC machines to create larger structural elements.</p>
+                            </div>
+                        </a>
+                        <a href="weeks/week8.html" class="view-details-btn">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:kamalesh@barefootcollege.org"><i class="far fa-envelope"></i> Email: kamalesh@barefootcollege.org</a></li>
+                <li><a href="https://wa.me/917727032477"><i class="fab fa-whatsapp"></i> Whatsapp: +917727032477</a></li>
+                <li><a href="https://barefootcollege.org"><i class="fas fa-building"></i> BAREFOOT COLLEGE</a></li>
+                <li><a href="mailto:barefootcollege.org"><i class="far fa-envelope"></i> Email: barefootcollege.org</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-university"></i> VIGYAN ASHRAM</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-globe"></i> Website: vigyanashram.com</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div class="social-links">
+                <a href="https://github.com/kamleshbisht" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/kamleshbisht" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kamleshbisht" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/kamleshbisht" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>ALMOST DESIGNED AND CODED BY KAMLESH BISHT</p>
+            <p class="copyright">© 2025 Kamlesh Bisht. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Additional script to ensure proper restoration of scroll position
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if we've been redirected from a week page
+            if (sessionStorage.getItem('assignmentsScrollPosition')) {
+                const scrollPosition = parseInt(sessionStorage.getItem('assignmentsScrollPosition'));
+                
+                // First attempt to scroll immediately
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'auto'
+                });
+                
+                // Second attempt after a brief delay to ensure DOM is fully loaded
+                setTimeout(function() {
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'auto'
+                    });
+                }, 100);
+                
+                // Final attempt after all resources and images are loaded
+                window.addEventListener('load', function() {
+                    window.scrollTo({
+                        top: scrollPosition,
+                        behavior: 'auto'
+                    });
+                });
+            }
+            
+            // Setup listeners on all assignment cards to save position
+            const assignmentCards = document.querySelectorAll('.assignment-card');
+            if (assignmentCards.length > 0) {
+                assignmentCards.forEach(card => {
+                    const weekLink = card.querySelector('.assignment-link');
+                    const detailsBtn = card.querySelector('.view-details-btn');
+                    
+                    if (weekLink) {
+                        weekLink.addEventListener('click', function(e) {
+                            sessionStorage.setItem('assignmentsScrollPosition', window.scrollY);
+                        });
+                    }
+                    
+                    if (detailsBtn) {
+                        detailsBtn.addEventListener('click', function(e) {
+                            sessionStorage.setItem('assignmentsScrollPosition', window.scrollY);
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background square -->
+  <rect width="100%" height="100%" fill="#2c3e50" rx="5" ry="5"/>
+  
+  <!-- KB letters stylized -->
+  <path d="M15,15 L22,15 L22,30 L32,15 L40,15 L28,35 L40,55 L32,55 L22,40 L22,55 L15,55 Z" fill="#e74c3c"/>
+  
+  <!-- Solar icon representing Solar R&D -->
+  <circle cx="40" cy="35" r="12" fill="#f39c12"/>
+  <circle cx="40" cy="35" r="9" fill="#2c3e50"/>
+  <circle cx="40" cy="35" r="6" fill="#f39c12"/>
+  
+  <!-- Rays from the sun -->
+  <line x1="40" y1="20" x2="40" y2="16" stroke="#f39c12" stroke-width="2"/>
+  <line x1="40" y1="50" x2="40" y2="54" stroke="#f39c12" stroke-width="2"/>
+  <line x1="25" y1="35" x2="21" y2="35" stroke="#f39c12" stroke-width="2"/>
+  <line x1="55" y1="35" x2="59" y2="35" stroke="#f39c12" stroke-width="2"/>
+  <line x1="50" y1="45" x2="53" y2="48" stroke="#f39c12" stroke-width="2"/>
+  <line x1="30" y1="25" x2="27" y2="22" stroke="#f39c12" stroke-width="2"/>
+  <line x1="50" y1="25" x2="53" y2="22" stroke="#f39c12" stroke-width="2"/>
+  <line x1="30" y1="45" x2="27" y2="48" stroke="#f39c12" stroke-width="2"/>
+</svg> 

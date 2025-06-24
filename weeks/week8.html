@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8: Computer-Controlled Machining | KamleshBisht</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="week-page">
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+    
+    <!-- Parallax Floating Elements -->
+    <div class="floating-element floating-square" style="top: 30%; left: 10%;"></div>
+    <div class="floating-element floating-triangle" style="top: 75%; left: 82%;"></div>
+    <div class="floating-element floating-circle" style="top: 65%; left: 18%;"></div>
+    
+    <!-- Scroll-based Animation Background -->
+    <div class="fade-bg"></div>
+    
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Resume Download Button -->
+    <a href="../resume.pdf" class="resume-btn" download="Kamlesh_Bisht_Resume.pdf">
+        <i class="fas fa-download"></i> Resume
+        <span class="feature-label">NEW</span>
+    </a>
+    
+    <!-- Back to Assignments Button -->
+    <a href="../assignments.html" class="back-to-assignments">
+        <i class="fas fa-arrow-left"></i> Back to Assignments
+    </a>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://fabacademy.org/2018/labs/fablabvigyanasharm/students/kamlesh-bisht/img/logo.png" alt="Fab Academy Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h1>KamleshBisht</h1>
+                <h2>Passionately innovating</h2>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="content-container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../assignments.html">Assignments</a></li>
+                <li><a href="../final-project.html">Final Project</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <main>
+            <section>
+                <h2>Week 8: Computer-Controlled Machining</h2>
+                <img src="../images/assignments/assignment4.svg" alt="Computer-Controlled Machining" class="assignment-header-image">
+                
+                <p>
+                    Week 8 introduced us to computer-controlled machining, focusing primarily on CNC routers for cutting and shaping larger pieces.
+                    This technology bridges the gap between small-scale digital fabrication (like laser cutting and 3D printing) and industrial manufacturing,
+                    allowing for the creation of furniture, structures, and large components from materials like wood, acrylic, and aluminum.
+                </p>
+                
+                <h3>Key Learning Outcomes</h3>
+                <ul>
+                    <li>Understanding CNC router capabilities, limitations, and safety considerations</li>
+                    <li>Learning to design parts suitable for CNC machining</li>
+                    <li>Creating toolpaths and G-code for CNC operations</li>
+                    <li>Selecting appropriate cutting tools and speeds for different materials</li>
+                    <li>Implementing fixturing and workholding strategies</li>
+                </ul>
+                
+                <h3>Equipment Used</h3>
+                <ul>
+                    <li>ShopBot CNC router for larger components</li>
+                    <li>Fusion 360 for CAD design and CAM programming</li>
+                    <li>Various endmills and cutting tools</li>
+                    <li>Plywood, MDF, and acrylic sheet materials</li>
+                </ul>
+                
+                <h3>Assignment Deliverables</h3>
+                <p>
+                    For this assignment, I had to:
+                </p>
+                <ol>
+                    <li>Design a large-scale object that could be fabricated with a CNC machine</li>
+                    <li>Create appropriate toolpaths for machining the parts</li>
+                    <li>Cut the parts using the CNC router</li>
+                    <li>Assemble and document the resulting object</li>
+                </ol>
+                
+                <h3>My Project: Modular Solar Equipment Stand</h3>
+                <p>
+                    Given my background at Barefoot College, I designed a modular stand for solar equipment that can be quickly assembled
+                    in remote locations. The design consists of:
+                </p>
+                <ul>
+                    <li>A base platform with adjustable feet for uneven terrain</li>
+                    <li>Vertical supports with integrated cable management channels</li>
+                    <li>A tilting top platform for optimal solar panel positioning</li>
+                    <li>Components that interlock using a "press-fit" approach, requiring minimal fasteners</li>
+                </ul>
+                
+                <h3>Design Considerations</h3>
+                <p>
+                    Several factors influenced my design decisions:
+                </p>
+                <ul>
+                    <li><strong>Material efficiency:</strong> Designing the components to minimize waste from a standard sheet of plywood</li>
+                    <li><strong>Assembly complexity:</strong> Creating a design that could be assembled without specialized tools</li>
+                    <li><strong>Stability:</strong> Ensuring the structure would be stable when loaded with solar equipment</li>
+                    <li><strong>Transportability:</strong> Making components that could be flat-packed for easy transport to remote locations</li>
+                </ul>
+                
+                <h3>The CNC Process</h3>
+                <p>
+                    The CNC machining process involved several key steps:
+                </p>
+                <ol>
+                    <li>Preparing the digital design in CAD software, ensuring all dimensions and tolerances were appropriate</li>
+                    <li>Creating toolpaths in CAM software, selecting appropriate tools, feeds, and speeds</li>
+                    <li>Setting up the CNC machine, including material fixturing and tool changes</li>
+                    <li>Running the machining operations, monitoring progress and making adjustments as needed</li>
+                    <li>Finishing the cut parts (sanding edges, removing tabs, applying finishes)</li>
+                </ol>
+                
+                <h3>Challenges and Solutions</h3>
+                <p>
+                    One significant challenge was designing joints that would be both strong and easy to assemble. I experimented with
+                    different press-fit joint designs, testing small prototypes before committing to the full-scale fabrication.
+                </p>
+                
+                <p>
+                    Another challenge was optimizing the cutting paths to minimize machine time while maintaining quality. This required
+                    a careful balance of tool selection, cutting depth, and feed rates. After several iterations, I achieved a toolpath
+                    strategy that produced clean cuts while being time-efficient.
+                </p>
+                
+                <h3>Reflection</h3>
+                <p>
+                    Computer-controlled machining has opened up new possibilities for my work at Barefoot College. The ability to design
+                    and fabricate large-scale components locally could significantly reduce costs and improve customization of our solar
+                    installations. This technology would be particularly valuable for creating mounting systems, enclosures, and other
+                    structural components that need to be adapted to specific environments.
+                </p>
+                
+                <p>
+                    I'm excited about combining this machining knowledge with the electronics skills from previous weeks to create
+                    integrated systems that incorporate both structural and functional electronic elements.
+                </p>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:kamalesh@barefootcollege.org"><i class="far fa-envelope"></i> Email: kamalesh@barefootcollege.org</a></li>
+                <li><a href="https://wa.me/917727032477"><i class="fab fa-whatsapp"></i> Whatsapp: +917727032477</a></li>
+                <li><a href="https://barefootcollege.org"><i class="fas fa-building"></i> BAREFOOT COLLEGE</a></li>
+                <li><a href="mailto:barefootcollege.org"><i class="far fa-envelope"></i> Email: barefootcollege.org</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-university"></i> VIGYAN ASHRAM</a></li>
+                <li><a href="https://vigyanashram.com"><i class="fas fa-globe"></i> Website: vigyanashram.com</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div class="social-links">
+                <a href="https://github.com/kamleshbisht" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/kamleshbisht" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/kamleshbisht" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/kamleshbisht" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>ALMOST DESIGNED AND CODED BY KAMLESH BISHT</p>
+            <p class="copyright">© 2023 Kamlesh Bisht. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <script>
+        // Add no-reload navigation for all links back to assignments page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle the back to assignments button
+            const backBtn = document.querySelector('.back-to-assignments');
+            if (backBtn) {
+                backBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Save the current scroll position of the assignments page
+                    sessionStorage.setItem('assignmentsScrollPosition', 0);
+                    // Change to the assignments page without reloading
+                    window.location.replace('../assignments.html');
+                    return false;
+                });
+            }
+            
+            // Handle the assignments nav link
+            const assignmentsLink = document.querySelector('nav a[href="../assignments.html"]');
+            if (assignmentsLink) {
+                assignmentsLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Save the current scroll position of the assignments page
+                    sessionStorage.setItem('assignmentsScrollPosition', 0);
+                    // Change to the assignments page without reloading
+                    window.location.replace('../assignments.html');
+                    return false;
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

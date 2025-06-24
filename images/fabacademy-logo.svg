@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- FAB ACADEMY Logo with green bg -->
+  <rect width="200" height="60" fill="#ffffff" rx="3" ry="3"/>
+  
+  <!-- Main FAB text -->
+  <path d="M10,10 H50 V18 H20 V26 H45 V34 H20 V50 H10 Z" fill="#18bc9c"/>
+  
+  <!-- ACADEMY text -->
+  <g fill="#2c3e50">
+    <path d="M55,20 L60,40 L65,20 L70,40 L75,20 L82,20 L73,50 L65,30 L57,50 L50,20 Z"/> <!-- A -->
+    <path d="M85,20 C91,20 96,25 96,30 C96,35 91,40 85,40 H80 V50 H72 V20 Z M80,25 V35 H85 C88,35 88,25 85,25 Z"/> <!-- C -->
+    <path d="M100,20 C106,20 111,25 111,30 C111,35 106,40 100,40 H95 V50 H87 V20 Z M95,25 V35 H100 C103,35 103,25 100,25 Z"/> <!-- A -->
+    <path d="M115,20 H123 V35 C123,43 115,43 115,35 Z"/> <!-- D -->
+    <path d="M127,20 H135 V50 H127 Z"/> <!-- E -->
+    <path d="M140,20 H155 L150,30 H160 L145,50 L150,40 H140 Z"/> <!-- M -->
+    <path d="M162,20 H178 L177,25 H170 V50 H162 V20 Z"/> <!-- Y -->
+  </g>
+  
+  <!-- Stylized diamond shape pattern -->
+  <path d="M185,20 L190,25 L185,30 L180,25 Z" fill="#18bc9c"/>
+  <path d="M175,40 L180,45 L175,50 L170,45 Z" fill="#18bc9c"/>
+  <path d="M165,20 L170,25 L165,30 L160,25 Z" fill="#18bc9c"/>
+</svg> 
